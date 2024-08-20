@@ -1,25 +1,24 @@
-import React from 'react';
+import React from "react";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience";
+import Contact from "./components/Contact/Contact";
 
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Hero />
       <About />
-      <Skills />
       <Projects />
-      <Testimonials />
+      <Skills />
+      <Experience />
       <Contact />
     </div>
   );
-}
+};
 
 export default App;
