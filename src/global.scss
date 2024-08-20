@@ -1,0 +1,88 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
+  }
+  
+
+  .header {
+    @apply bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 text-white p-4 text-center shadow-md sticky top-0 z-50;
+  }  
+  
+
+  .hero {
+    @apply bg-gradient-to-b from-gray-900 to-gray-800 text-center flex flex-col items-center py-12 px-6;
+  }
+  
+  .hero__image {
+    @apply rounded-full shadow-lg w-40 h-40 mb-4 border-4 border-gray-700;
+  }
+  
+
+  .social-icons {
+    @apply flex space-x-4 mt-4;
+  }
+
+  .about,
+  .projects,
+  .skills,
+  .testimonials,
+  .contact {
+    @apply p-8;
+  }
+
+  .card {
+    @apply bg-gray-800 text-white shadow-lg p-6 rounded-lg transition-transform transform hover:scale-105;
+  }
+  
+  .button-primary {
+    @apply bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors;
+  }
+  
+  input, textarea {
+    @apply w-full p-2 border border-gray-700 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+  
+  a {
+    @apply text-blue-400 hover:text-blue-500;
+  }
+  .animated-border {
+    @apply relative inline-block text-white py-2 px-6 rounded-lg font-bold cursor-pointer overflow-hidden;
+    background: linear-gradient(45deg, #2c3e50, #4b4b4b, #6c757d, #343a40);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+    border: none; /* Removed the border */
+    background-clip: border-box;
+    position: relative;
+    z-index: 1;
+  
+    &:hover {
+      background-position: 100% 0;
+    }
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, #2c3e50, #4b4b4b, #6c757d, #343a40);
+      background-size: 200% 200%;
+      z-index: -1;
+      filter: blur(6px); /* Slightly blurred background effect */
+      transition: background-position 0.5s ease;
+    }
+  
+    &:hover:before {
+      background-position: 100% 0;
+    }
+  }
+  
+}  
