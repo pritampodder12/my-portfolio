@@ -1,44 +1,69 @@
-# React Boilerplate with Webpack, Tailwind CSS, SCSS
+# Pritam Podder's Portfolio
 
-This project is a boilerplate setup for a React application, created using **Webpack**, **React**, **Tailwind CSS**, and **SCSS**.
+Welcome to my personal portfolio! This is a React-based portfolio showcasing my skills, projects, and achievements.
 
-## Key Features
+## Table of Contents
 
-1. **Manual Setup**
-   - All necessary development dependencies were manually installed, providing greater control over the project structure.
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Deployment](#deployment)
+- [License](#license)
+- [Contact](#contact)
 
-2. **Webpack Configuration**
-   - **Webpack** is used to bundle all modules required for running the React project.
-   - The configuration is handled in the `webpack.config.js` file.
+## About
 
-3. **Babel Configuration**
-   - **Babel** is configured to ensure the browser can understand JSX syntax.
+This portfolio is designed to showcase my work as a web developer. It includes sections for my biography, skills, projects, and contact information. The site is styled with modern design principles using React, SCSS, and Tailwind CSS, and it features a dark theme for a sleek and contemporary look.
 
-4. **SCSS Integration**
-   - **SCSS** is used for styling, and it's integrated into the Webpack configuration.
+## Features
 
-5. **Tailwind CSS Installation**
-   - **Tailwind CSS** is installed and configured, enabling utility-first CSS for rapid UI development.
+- **Hero Section**: Introduction and social media links.
+- **About Me**: Brief overview of my professional background.
+- **Skills**: List of technologies and skills I possess.
+- **Projects**: Highlights of selected projects with descriptions and images.
+- **Testimonials**: Feedback from colleagues and clients.
+- **Contact Form**: A form to reach out to me directly.
 
-## Purpose
+## Technologies Used
 
-This boilerplate serves as an example to demonstrate that **Next.js** might not be necessary for small web applications. The setup can be reused in future projects when building a web application from scratch.
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **SCSS**: Sassy CSS for more powerful styling.
+- **GitHub Pages**: Hosting for deploying the portfolio.
 
-## Installation Guide
+## Getting Started
 
-You can easily set up a new React application using this boilerplate by running the following command:
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/pritampodder12/my-portfolio.git
+   ```
+
+2. **Navigate to the project directory**:
 
 ```bash
-npx @ppodder/simple-react-app myApp
+cd my-portfolio
 ```
 
-## Upcoming Features
+```bash
+npm install
+```
 
-1. **Setup Dev, UAT, Prod Environment**
-   - Plan to establish distinct development, UAT (User Acceptance Testing), and production environments.
+```bash
+npm run dev
+```
 
-2. **Docker Implementation**
-   - Integrate Docker for containerization, ensuring consistency across different environments.
+## Deployment
 
-3. **CI/CD Implementation**
-   - Implement Continuous Integration and Continuous Deployment (CI/CD) pipelines for automated testing and deployment processes.
+This portfolio is deployed using GitHub Pages. For deployment, ensure the homepage field in package.json is set to:
+
+```json
+"homepage": "https://pritampodder12.github.io/my-portfolio"
+```
+
+```bash
+npm run deploy
+```
