@@ -5,19 +5,18 @@
 @layer base {
   body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(180deg, #0a0a2a 0%, #000000 100%);
+    font-family: "Raleway";
     color: white;
     overflow-x: hidden;
+    overflow-y: auto;
+    @apply bg-gray-900;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
-  
-  p {
-    margin: 0;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-  
-  
-}  
+}
