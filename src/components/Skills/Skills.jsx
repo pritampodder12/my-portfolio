@@ -6,14 +6,14 @@ import skillDetails from "../../data/skillDetails";
 const Skills = () => {
   return (
     <section id="skills" className="py-40">
-      <div className="flex gap-x-10 pl-40">
+      <div className="flex gap-x-10 pl-40 items-center">
         <div className="text-gray-400 text-2xl leading-loose min-w-[400px]">
           <div>4 years of</div>
           <div className="text-7xl font-bold text-white">XP</div>
           <div>with the most popular ecosystem</div>
           <div>frontend</div>
         </div>
-        <div className="flex gap-y-5 gap-x-10 overflow-x-auto no-scrollbar">
+        <div className="flex gap-y-5 gap-x-10 overflow-x-auto pl-10  h-[300px] items-center scrollbar">
           {skills.map((skill) => (
             <XpCard
               key={skill.name}

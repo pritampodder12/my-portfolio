@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="bg-gray-800 fixed w-1/3 rounded-full py-4 top-6 left-0 right-0 mx-auto px-4 text-sm font-medium flex items-center justify-between">
       <div className="space-x-10 text-purple-300">
-        <a href="#home" className={hash === "home" ? "text-white" : ""}>
+        <a href="#home" className={hash === "home" || hash === "" ? "text-white" : ""}>
           Home
         </a>
         <a href="#skills" className={hash === "skills" ? "text-white" : ""}>
