@@ -5,3 +5,7 @@ import "./global.scss";
 
 const root = createRoot(document.getElementById("root"));
 root.render(<App />);
+
+if (module.hot) {
+  module.hot.accept();
+}

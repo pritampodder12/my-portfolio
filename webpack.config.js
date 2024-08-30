@@ -18,7 +18,7 @@ module.exports = {
     historyApiFallback: true,
     static: path.resolve(__dirname, "public"),
     open: false,
-    hot: false,
+    hot: true,
     port: 4000,
   },
   resolve: {
@@ -34,7 +34,7 @@ module.exports = {
       },
       // Images
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|pdf)$/i,
         type: "asset/resource",
       },
       // Fonts and SVGs
@@ -61,7 +61,6 @@ module.exports = {
       favicon: "./public/favicon.ico",
     }),
     new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin()
   ],
 };
