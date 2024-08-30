@@ -25,6 +25,9 @@ module.exports = {
           "0 0px 65px rgba(255, 255,255, 0.2)",
         ],
       },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(1, 1, 1, 0.3)',
+      },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },

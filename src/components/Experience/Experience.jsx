@@ -1,7 +1,13 @@
 import React from "react";
 import experience from "../../data/experience";
+import { downloadFile } from "../../util/helper";
+import profile from "../../data/profile";
 
 export default function Experience() {
+  function handleDownload(e) {
+    e.preventDefault();
+    downloadFile(profile.links.resume, "PritamPodder.pdf");
+  }
   return (
     <section
       id="experience"
@@ -12,12 +18,15 @@ export default function Experience() {
         <div>
           whole experience as a&nbsp;
           <span className="text-white font-medium">
-            Front-End Software Engineer
+            Full-Stack Software Engineer
           </span>
           . /&rsaquo;
         </div>
       </div>
-      <button className="bg-gray-300 rounded-full text-base font-bold text-gray-900 px-10 py-3">
+      <button
+        className="bg-gray-300 rounded-full text-base font-bold text-gray-900 px-10 py-3"
+        onClick={handleDownload}
+      >
         Download CV
       </button>
 
@@ -41,13 +50,15 @@ export default function Experience() {
               </div>
               <div className="text-base">{exp.location}</div>
             </div>
-            <div className="text-xl leading-loose space-y-5">
-              <div className="font-semibold text-purple-300">
+            <div className="text-xl space-y-5">
+              <div className="font-semibold text-purple-300 leading-loose">
                 {exp.employer}
               </div>
-              {exp.responsibilities.map((resp) => (
-                <div key={resp}>{resp}</div>
-              ))}
+              <ul className="list-disc marker:text-green-500">
+                {exp.responsibilities.map((resp) => (
+                  <li key={resp} className="mb-4">{resp}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
